@@ -1,2 +1,6 @@
+import re
 def remove_parentheses(text):
-    return text
+    text = re.sub("\(.*?\)", "", text)
+    print(text)
+
+remove_parentheses("Possiblen't (nie) jest istniejącym słowem")
