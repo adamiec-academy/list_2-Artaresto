@@ -5,7 +5,7 @@ def is_prime(n):
                 break
         else:
             return True
-        n += 1
+     
         
 def is_diabolic(n):
     return "666" in str(n)
