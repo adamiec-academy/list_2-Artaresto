@@ -10,11 +10,11 @@ def is_prime(n):
 def is_diabolic(n):
     return "666" in str(n)
 
-def time():
+def glue():
     a = 0
     for j in range(100001):
         if is_diabolic(j) and is_prime(j):
             print(j)
             a += 1
     print (f"takich liczb jest {a}")
-print(time())
+print(glue())
