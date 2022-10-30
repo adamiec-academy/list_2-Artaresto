@@ -14,7 +14,7 @@ def multiplication_table(x1, x2, y1, y2):
         print(f"{c}{b * lenght }", end="")
 
     print(" ",end="\n")
-    print("-" * ((second+lenght+x2*lenght) - lenght))
+    print("-" * ((second+lenght+x2*lenght) - lenght - 1))
     
     for collumn in range(y1, y2+1):
         a = len(str(collumn))
