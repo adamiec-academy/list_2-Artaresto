@@ -8,10 +8,12 @@ def multiplication_table(x1, x2, y1, y2):
     for first in range(c,d + 1):
         if first == x1:
             print(a, end=b*(lenght -1))
-        else: 
+        else:
             c += 1
             second += 1
-        print(f"{c}{b * (lenght - 4)}", end="")
+            print(f"{c}{b * (lenght - 1)}", end="")
+        if c == x2: 
+            print(c)
 
     print("",end="\n")
     if x2*y2 > 100:
@@ -27,3 +29,4 @@ def multiplication_table(x1, x2, y1, y2):
             free_space = lenght - a 
             outcome += " " * free_space + str(collumn*row)
         print(outcome)
+
