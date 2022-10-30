@@ -11,9 +11,11 @@ def multiplication_table(x1, x2, y1, y2):
         else:
             c += 1
             second += 1
-            print(f"{c}{b * (lenght - 1)}", end="")
-        if c == x2: 
-            print(c)
+            if c == x2:
+                print(c, end="")
+                break
+        print(f"{c}{b * (lenght - 1)}", end="")
+
 
     print("",end="\n")
     if x2*y2 > 100:
