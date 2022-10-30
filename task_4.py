@@ -14,7 +14,9 @@ def multiplication_table(x1, x2, y1, y2):
         print(f"{c}{b * (lenght - 1) }", end="")
 
     print(" ",end="\n")
-    print("-" * (second+(lenght -1) + x2 * (lenght - 1) - (lenght - 1)))
+    if x2*y2 > 100:
+        second -= 1
+    print("-" * ((second + 1)+ lenght + x2 * (lenght - 1) - lenght))
     
     for collumn in range(y1, y2+1):
         a = len(str(collumn))
@@ -25,4 +27,3 @@ def multiplication_table(x1, x2, y1, y2):
             free_space = lenght - a 
             outcome += " " * free_space + str(collumn*row)
         print(outcome)
-
